@@ -1,0 +1,15 @@
+"""
+Materi: Variabel dan Pemrograman Dasar
+Judul: Praktikum 1 
+Senin, 20 September 2021
+Nama: Tria Noveta
+NIM: 065002100025
+"""
+
+print("Hai")
+x = input("Siapa nama kamu? ")
+print("Salam kenal,", x)
+y = input("Kamu tinggal dimana? ")
+print("Ooh kamu tinggal di", y)
+z = input("asal sekolah mana? ")
+print("Ooh di", z)
