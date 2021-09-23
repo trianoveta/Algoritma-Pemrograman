@@ -1,0 +1,17 @@
+"""
+Selasa, 21 September 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 2 Praktikum 1 
+"""
+
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+print("Saya akan membantumu menghitung luas ruangan")
+p = float(input("Berapa panjang ruanganmu: "))
+l = float(input("Berapa lebar ruanganmu: "))
+a = input("Masukkan Satuan (Meter/Inci): ")
+L = p*l
+print("Luas ruanganmu dengan panjang", p, "dan lebar" , l, "adalah", L,a)
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
