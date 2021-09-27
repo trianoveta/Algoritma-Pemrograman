@@ -1,0 +1,24 @@
+"""
+Senin, 27 September 2021
+Nama: Tria Noveta
+NIM: 065002100025
+"""
+
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+print("Saya akan membantumu menghitung hasil perhitungan")
+
+import math 
+a = float(input("Masukkan nilai a: "))
+b = float(input("Masukkan nilai b: "))
+
+print("Jumlah a ditambah b adalah", a + b)
+print("Selisih antara a dan b adalah", a - b)
+print("Jumlah a dikali b adalah", a * b)
+print("Jumlah sisa pembagian dari hasil a dibagi b adalah", a % b)
+print("Jumlah a dibagi b adalah", a / b)
+print("Hasil a pangkat b adalah", a ** b)
+print("Hasil dari log(a) adalah", math.log10(a))
+
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
