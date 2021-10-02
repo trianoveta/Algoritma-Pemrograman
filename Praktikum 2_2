@@ -1,0 +1,29 @@
+"""
+Senin, 27 September 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 2 Praktikum 2
+"""
+
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+print("Saya akan membantumu menghitung jarak antara dua titik dalam satuan kilometer")
+print("Program ini hanya untuk orang yang percaya bahwa bumi itu bulat")
+
+t1 = float(input("Masukkan lattitude kota ke-1 = "))
+g1 = float(input("Masukkan longitude kota ke-1 = "))
+t2 = float(input("Masukkan lattitude kota ke-2 = "))
+g2 = float(input("Masukkan longitude kota ke-2 = "))
+
+import math
+#haversine formula
+R = 6371.01
+latt = math.radians(t2-t1)
+long = math.radians(g2-g1)
+a = math.sin(latt/2) * math.sin(latt/2) + math.cos(math.radians(t1)) * math.cos(math.radians(t2)) * math.sin(long/2) * math.sin(long/2) 
+c = 2*math.atan2(math.sqrt(a), math.sqrt(1-a)) 
+d = R*c
+print("Jarak antara dua titik kota adalah ", d, "Kilometer")
+
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
