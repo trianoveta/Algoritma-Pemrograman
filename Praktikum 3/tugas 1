@@ -1,0 +1,29 @@
+"""
+Senin, 4 Oktober 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 1 Praktikum 3
+"""
+
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+print("Saya akan membantumu menentukan jenis segitiga")
+
+a = float(input("Panjang sisi A = "))
+b = float(input("Panjang sisi B = "))
+c = float(input("Panjang sisi C = "))
+
+if (a == b == c):
+    print("Ini merupakan segitiga sama sisi") 
+elif (a == b or b == c or a == c):
+    print("Ini merupakan segitiga sama kaki")  
+#elif (a == math.sqrt((b**2) + (c**2)) or c == math.sqrt((b**2) + (a**2)) or b == math.sqrt((a**2) + (c**2))):
+    #print("Ini merupakan segitiga siku-siku")  
+else:
+    if ((a + b <= c) or (a + c <= b) or (b + c <= a)):
+        print("Ini bukan merupakan segitiga")
+    else:
+        print("Ini merupakan segitiga sembarang")
+
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
