@@ -1,0 +1,43 @@
+"""
+Senin, 4 Oktober 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 2 Praktikum 3
+"""
+
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+print("Saya akan membantumu menghitung persamaan kuadrat")
+import math as m
+a = int(input("Masukkan nilai A = "))
+b = int(input("Masukkan nilai B = "))
+c = int(input("Masukkan nilai C = "))
+D = (b**2)-(4*a*c)
+
+if (D == 0) and (a!=0):
+    print("Persamaan kuadrat", a, "x^2 + (" + str(b)+ ") x +", c)
+    print("Determinannya = ", D)
+    print("Merupakan Akar Kembar")
+    x = -b/2*a
+    print("Akar = ", x)
+elif (D < 0) and (a!=0):
+    print("Persamaan kuadrat", a, "x^2 +", b, "x +", c)
+    print("Determinannya = ", D)
+    print("Merupakan Akar Imaginer")
+    x1 = -b/2*a
+    x2 = -b/2*a
+    print("Akar x1= ", x1, "+ Akar", D, "/2 *",a)
+    print("Akar x2= ", x2, "- Akar", D, "/2 *",a)
+elif (D > 0) and (a!=0):
+    print("Persamaan kuadrat", a, "x^2 +", b, "x +", c)
+    print("Determinannya = ", D)
+    print("Memiliki Akar Berbeda")
+    x1 = (-b+m.sqrt(D))/(2*a)
+    x2 = (-b-m.sqrt(D))/(2*a)
+    print("Akar x1= ",x1)
+    print("Akar x2= ",x2)
+elif (a == 0):
+    print("Ini bukan merupakan Persamaan Kuadrat")
+
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
