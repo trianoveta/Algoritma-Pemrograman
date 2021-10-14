@@ -1,0 +1,38 @@
+"""
+Senin, 11 Oktober 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 2 Praktikum 4
+"""
+
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+print("Saya akan membantumu menentukan jumlah hari dalam bulan")
+
+bulan,tahun,tidak = 0,0,0
+while(bulan>-2):
+    bulan +=bulan 
+    bulan = int(input('Masukkan bulan ke: '))
+    if(bulan >= 13 or bulan <= 0) and bulan != -1 :
+        print("Maaf anda salah memasukkan bulan")
+        print('Masukkan -1 untuk mengakhiri program')
+    elif(bulan == 1 or bulan == 3 or bulan == 5 or bulan == 7 or bulan == 8 or bulan == 10 or bulan == 12):
+        print("Bulan ini 31 hari")
+        print('Masukkan -1 untuk mengakhiri program')
+    elif(bulan == 2):
+        tahun = int(input('Masukkan tahun ke: '))
+        if(tahun %4 == 0 and bulan == 2):
+            bulan += bulan
+            print("Bulan Ini 29 hari")
+            print('Masukkan -1 untuk mengakhiri program')
+        else: 
+            print("Bulan Ini 28 hari")
+            print('Masukkan -1 untuk mengakhiri program')
+    elif(bulan == 4 or bulan == 6 or bulan == 9 or bulan == 11):
+        print('Bulan ini 30 hari')
+        print('Masukkan -1 untuk mengakhiri program')
+    if(bulan == -1):
+        print('Program selesai')
+        break;
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
