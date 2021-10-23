@@ -1,0 +1,46 @@
+"""
+Senin, 18 Oktober 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 2 Praktikum 5
+"""
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+print("Saya akan membantumu menghitung harga tiket masuk Kebun Bintang")
+
+n = '0'
+harga = 0
+
+while (n!=''):
+    umur = int(input('Masukkan umur pembeli tiket: '))
+    if (umur==-1):
+        break
+    elif (umur <= 2 and umur >= 0):
+        harga += 0
+        print('Harga Tiket = Free untuk Anda')
+        print('Total harga tiket: ', harga)
+        print('Tekan -1 jika ingin membayar tiket')
+    elif (umur >= 3 and umur <= 12):
+        print('Harga tiket = $14')
+        harga += 14
+        print('Total harga tiket: ', harga)
+        print('Tekan -1 jika ingin membayar tiket')
+    elif (umur >= 65):
+        print('Harga tiket = $18')
+        harga += 18
+        print('Total harga tiket: ', harga)
+        print('Tekan -1 jika ingin membayar tiket')
+    else:
+        print('Harga tiket = $23')
+        harga += 23
+        print('Total harga tiket: ', harga)
+        print('Tekan -1 jika ingin membayar tiket')
+print('Total harga tiket yang harus dibayar: ', "$", harga)
+bayar = int(input('Masukkan uang: '))
+while (bayar < harga):
+    print('Uang Anda tidak mencukupi')
+    bayar = int(input('Masukkan uang: '))
+print('Kembalian: ', '$', bayar-harga)
+
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
