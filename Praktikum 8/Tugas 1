@@ -1,0 +1,34 @@
+"""
+Senin, 8 November 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 1 Praktikum 8
+"""
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+print("Saya akan membantumu menentukan bilangan prima dan bukan bilangan prima")
+
+bil = int(input('Masukkan Bilangan: '))
+
+def prima(bil):
+    if (bil ==2 or bil==3 or bil == 5 or bil== 7) or (bil % 2 != 0 and bil%3!=0 and bil %5!=0 and bil%7!=0):
+        print(bil,'adalah bilangan prima')
+    else:
+        nonprima(bil)
+
+def nonprima(bil):
+    if bil >=1:
+        for i in range(2,bil):
+            if bil%i==0:
+                print(bil, "bukan bilangan prima")
+                print(bil, "bukan bil prima\n", i,'kali', bil//i, '=',bil)
+                break
+            else:
+                ('')
+    else:
+        print('kesalahan')
+
+prima(bil)
+
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
