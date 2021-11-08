@@ -20,7 +20,6 @@ def nonprima(bil):
     if bil >=1:
         for i in range(2,bil):
             if bil%i==0:
-                print(bil, "bukan bilangan prima")
                 print(bil, "bukan bil prima\n", i,'kali', bil//i, '=',bil)
                 break
             else:
