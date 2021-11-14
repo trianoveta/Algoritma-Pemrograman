@@ -1,0 +1,49 @@
+"""
+Senin, 8 November 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 2 Praktikum 8
+"""
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+print("Saya akan membantumu menentukan bilangan bertingkat dalam bahasa inggris")
+
+F = False
+def st(num):
+    if num%10 == 1 and not num in [11]:
+        print(num,"st")
+    else:
+        th(num)
+def nd(num):
+    if num%10 == 2 and not num in [12]:
+        print(num,"nd")
+    else:
+        th(num)
+def rd(num):
+    if num%10 == 3 and not num in [13]:
+        print(num,"rd")
+    else:
+        th(num)    
+def th(num):
+    if num%10 >= 4 or num%10 == 0 or num in [11,12,13]:
+        print(num,"th")
+    else:
+        if num%10 == 1:
+            st(num)
+        elif num%10 == 2:
+            nd(num)
+        elif num%10 == 3:
+            rd(num)
+
+while (not F):
+    print("Masukkan 0 untuk berhenti")
+    num = int(input("Masukkan angka: "))
+    if num == 0:
+        print('0 th')
+        F = True
+    else :
+        th(num)
+    
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
+    
