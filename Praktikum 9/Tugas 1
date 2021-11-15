@@ -1,0 +1,25 @@
+"""
+Senin, 15 November 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 1 Praktikum 9
+"""
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+print("Saya akan membantumu menentukan penjumlahan dalam bilangan yang lebih dari satu")
+
+
+jumlah = int(input('Masukkan jumlah: '))
+def penjumlahan(angka =0, jum =0, i=1):
+    if jum <= 0:
+        return 0
+    else:
+        angka = int(input('Masukkan bilangan ke-' + str(i) + ": "))
+        if(jum == 1):
+            return angka
+        else:
+            i+=1
+            return angka + penjumlahan(angka, jum-1, i)
+
+nil = penjumlahan(jum=jumlah)
+print('hasil dari penjumlahan adalah:'+ str(nil))
