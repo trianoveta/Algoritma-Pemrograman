@@ -1,0 +1,42 @@
+"""
+Senin, 15 November 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Bonus Praktikum 9
+"""
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+
+print('Tekan 1, mengubah Hexadesimal menjadi Desimal')
+print('Tekan 2, mengubah Desimal menjadi Hexadesimal')
+print('Tekan -1, untuk berhenti')
+
+def hexa(Hex):
+    n = print(Hex)
+    return str(n)
+def des(dex):
+    n = print(dex)
+    return str(n)
+
+tekan = int(input("Masukkan pilihan: "))
+if tekan == 1:
+    Hex = 0
+    while Hex != -1:
+        Hex = int(input('Masukan interger Hexadesimal: '),16)
+        if Hex == -1:
+            print('Program Berakhir')
+            break
+        else:
+            hexa(Hex)
+elif tekan == 2:
+    dex = 0
+    while dex != -1:
+        dex = int(input('Masukan interger Desimal: '),16)
+        if dex == -1:
+            print('Program Berhenti')
+            break
+        else:
+            des(dex)
+
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
