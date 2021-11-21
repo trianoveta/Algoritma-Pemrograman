@@ -1,0 +1,45 @@
+"""
+Senin, 15 November 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 2 Praktikum 9
+"""
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+print("Saya akan membantumu menghitung pemangkatan negatif dan positif")
+
+def pangkat(no,e) :
+    if no == 1:
+        return 1
+    elif no == 0:
+        return 0
+    else :
+        if e == 1:
+            return no
+        elif e == 0:
+            return 1
+        elif e > 1 :
+            return no * pangkat(no,e-1)
+        elif e < 0 :
+            return 1/no * pangkat(no,e-1)
+        else :
+            print("data invalid")
+
+def start(x=0,y=0):
+    x=int(input("masukan angka: "))
+    y=int(input('masukan pangkat: '))
+    hasil = pangkat(no = x,e = y)
+    print("hasil dari ",x,"pangkat",y,"adalah :",hasil)
+    stop()
+
+def stop():
+    a=input("Ingin melanjutkan?(ya/tidak): ")
+    if a == "ya":
+        start()
+    elif a == "tidak":
+        print("Terimakasih telah datang")
+        print("Sampai jumpa lagi^_^")
+    else:
+        print('salah anda masukkan')
+        stop()
+start()
