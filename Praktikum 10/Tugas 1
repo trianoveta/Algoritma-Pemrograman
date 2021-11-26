@@ -1,0 +1,33 @@
+"""
+Jum'at', 26 November 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 1 Praktikum 10
+"""
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+
+def write(xyz):
+    file = open("Test.txt", "w")
+    file.write(xyz)
+    file.close()
+    
+def read():
+    file = open("Test.txt", "r")
+    text = file.read()
+    print(text)
+    file.close()
+
+x = str(input("Masukan nama mu: "))
+y = str(input("Masukan umur mu: "))
+z = str(input("Masukan alamat mu: "))
+a = str(input("Masukan e-mail mu: "))
+b = str(input("Masukan dosen wali mu: "))
+print("Berikut ini Data mu\n")
+xyz = 'Nama: {}\nUmur: {}\nAlamat: {}\nE-mail: {}\nDosen Wali: {}'.format(x,y,z,a,b)
+
+write(xyz)
+read()
+
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
