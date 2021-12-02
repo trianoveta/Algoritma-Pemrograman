@@ -1,0 +1,66 @@
+"""
+Jum'at', 26 November 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 2 Praktikum 10
+"""
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+
+def write(v):
+    x = open (namafile+".txt","w")
+    x.write(v)
+    x.close()
+    
+def read():
+    x = open(namafile+".txt","r")
+    print(x.read())
+    x.close()
+    
+def append(v):
+    x = open(namafile+".txt","a")
+    x.write(v)
+    x.close()
+
+y = True 
+while (y):
+    try:
+        print("~~~Progam File Handling~~~")
+        print("1.Membuat dan Menulis File")
+        print("2.Membaca File")        
+        print("3.Menambahkan Teks Pada File")
+        print("4.Keluar Dari Program ini")
+        print("")
+        ang = int(input("Masukkan pilihan (1/2/3/4): "))
+        if ang == 1:
+            namafile = input("Masukkan nama file: ")
+            nama = input("Masukkan namamu: ")
+            nim = int(input("Masukkan NIM mu: "))
+            thn = int(input("Masukkan tahun angkatanmu: "))
+            v = "Nama: {}\nNim: {}\nAngkatan: {}".format(nama,nim,thn)
+            write(v)
+            print("\n\nfile berhasil dibuat\n\n")
+        elif ang == 2:
+            namafile = input("Masukkan nama file: ")
+            print("")
+            read()
+            print("")
+        elif ang == 3:
+            namafile = input("Masukkan nama file: ")
+            Nama = input("Masukkan nama sahabat mu: ")
+            catt = input("Masukkan catatan tambahan: ")
+            v = "\nNama sahabatmu: {}\ncatatan: {}".format(Nama,catt)
+            print("")
+            append(v)
+            print("\n\nfile telah berhasil ditambahkan\n\n")
+        elif ang == 4:
+            y = False 
+            print("Terima kasih telah datang\nSampai jumpa lagi^_^")
+        else:
+            print ("Anda salah memasukkan pilihan")
+            print("")
+
+    except ValueError:
+        print("Masukkan kembali")
+    except FileNotFoundError:
+        print("Masukkan kembali, file tidak ditemukan!\n")  
