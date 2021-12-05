@@ -1,0 +1,23 @@
+"""
+Senin, 29 November 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 2 Praktikum 11
+"""
+def bubbleSort(v):
+    count = 0
+    for idx in range(len(v)-1):
+        if v[idx] > v[idx + 1]:
+            v[idx],v[idx + 1] = v[idx + 1],v[idx]
+            count += 1
+            if count == 0:
+                return v
+            else:
+                bubbleSort(v)
+
+v = [87, 56, 34, 23, 89, 15, 2, 200, 28, 31]
+bubbleSort(v)
+print('Sesudah disorting: ', v)
+
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
