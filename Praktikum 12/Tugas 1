@@ -1,0 +1,31 @@
+"""
+Senin, 6 Desember 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 1 Praktikum 12
+"""
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+
+class mahasiswa:
+    total = 0
+    def __init__(self, nama, NIM, tahun):
+        self.nama = x
+        self.NIM = y
+        self.angkatan = z
+        mahasiswa.total += 1
+        
+    def Biodata(self):
+        print('Nama: ', self.nama,'\nNIM: ', self.NIM,'\nAngkatan: ', self.angkatan)
+
+x = input("Masukan nama mu: ")
+y = int(input("Masukan NIM mu: "))
+z = int(input("Masukan tahun angkatanmu: "))
+
+mahasiswa1= mahasiswa(x,y,z)
+mahasiswa1.Biodata()
+
+print('Total mahasiswa: ', mahasiswa.total)
+
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
