@@ -1,0 +1,56 @@
+"""
+Senin, 6 Desember 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 2 Praktikum 12
+"""
+class OOP:
+    def __init__(self, nama, nilai):
+        self.nama = nama
+        self.nilai = nilai
+    def hasil(self):
+        print('Nama: ', self.nama, '\nNilai: ', str(self.nilai))
+
+y = True 
+while (y):
+    try:
+        print("~~~Progam OOP~~~")
+        print("1. Mendeklarasikan Objek")
+        print("2. Menampilkan Objek")        
+        print("3. Merubah Nilai Objek")
+        print("4. Menghapus Objek")
+        print("5. Keluar Dari Program")
+        print("")
+        ang = int(input("Masukkan pilihan (1/2/3/4/5): "))
+        if ang == 1:
+            nama = input("Masukkan namamu: ")
+            nilai = input("Masukkan nilaimu: ")
+            prnt = OOP(nama,nilai)
+            print("\n\nData berhasil dibuat\n\n")
+        elif ang == 2:
+            prnt = OOP(nama,nilai)
+            prnt.hasil()
+            print('\n')
+        elif ang == 3:
+            mengubah = input('Apa yang akan diubah(nama/nilai): ')
+            if mengubah == 'nama' :
+                nama = input('Masukkan nama: ')
+                print('Data Nama telah Diubah\n')
+            elif mengubah == 'nilai' :
+                nilai = input('Masukkan nilai: ')
+                print('Data Nilai telah Diubah\n')
+            else:
+                print('Kurang tepat! PERHATIKAN KEMBALI')
+        elif ang == 4:
+            print('Data Berhasil Dihapus')
+            nama = 'none'
+            nilai = 'none'
+        elif ang == 5:
+            y = False 
+            print("Terima kasih telah datang\nSampai jumpa lagi^_^")
+        else:
+            print ("Anda salah memasukkan pilihan")
+            print("")
+
+    except ValueError:
+        print("Masukkan kembali")
