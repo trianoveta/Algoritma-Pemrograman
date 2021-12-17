@@ -1,0 +1,20 @@
+"""
+Jum'at, 17 Desember 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 1 Praktikum 13
+"""
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+
+import pandas as pd
+df = pd.read_csv(r'C:/Users/MY ASUS/Downloads/kuliah/Negara.csv')
+mean = df.groupby(['Benua']).mean()
+std = df.groupby(['Benua']).std()
+
+print('Berikut Data Framenya: \n', df)
+print('\nBerikut Data Mean: \n', mean)
+print('\nBerikut Data Standard Deviation: \n', std)
+
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
