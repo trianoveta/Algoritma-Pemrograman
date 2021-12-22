@@ -1,0 +1,26 @@
+"""
+Jum'at, 17 Desember 2021
+Nama: Tria Noveta
+NIM: 065002100025
+Tugas 2 Praktikum 13
+"""
+print("Selamat Datang!")
+print("Berjumpa lagi dengan saya")
+
+import pandas as pd
+df = pd.read_csv(r'D:/kuliah/Negara.csv')
+mean = df.groupby(['Benua']).mean()
+std = df.groupby(['Benua']).std()
+
+def negara(a, sort):
+    f = open('negara.csv', 'w')
+    f.write(a)
+    f.write(sort)
+    f.close()
+    
+a = 'Data Negara secara lengkap\n{}\n'.format(df)
+sort = '{}\n{}'.format(mean, std)
+negara(a, sort,'\nFile Berhasil Dibuat')
+
+print("Terimakasih telah datang")
+print("Sampai jumpa lagi^_^")
